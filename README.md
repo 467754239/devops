@@ -1,17 +1,17 @@
-## nohup原理
+## nohup
 ```
 nohup(n ohang up)
 中文意思就是不挂起的意思
 
 $ man nohup  //查看对应的帮助说明.
-运行COMMAND，忽略挂起的信号.
-标准输出和标准错误缺省会被重定向到 nohup.out 文件中。
+运行COMMAND，忽略挂起SIGHUP信号.
+标准输出和标准错误缺省会被重定向到 nohup.out 文件中
 
 终端关闭后会给此终端下的每一个进程发送SIGHUP信号，从而关闭其所有子进程;
 而使用nohup运行的进程则会忽略这个SIGHUP信号，因此终端关闭后进程也不会退出。
 ```
 
-## flask session原理
+## flask session
 ```
 flask中的session默认是完全保留在客户端浏览器中的，
 也就是说我往flask的session中写入数据，最终这些数据将会以json字符串的形式，
@@ -57,3 +57,5 @@ python main.py
 
 这样就可以了.
 ```
+
+![supervise]()
