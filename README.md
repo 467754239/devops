@@ -55,7 +55,4 @@ while True:
 source /etc/profile
 python main.py
 
-这样就可以了.
 ```
-
-![supervise]()
