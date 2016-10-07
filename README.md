@@ -59,3 +59,13 @@ source /etc/profile
 python main.py
 
 ```
+
+## 敏捷开发
+```
+
+```
+
+## 站立会
+```
+
+```
