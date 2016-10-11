@@ -44,6 +44,7 @@ http://www.kancloud.cn/wizardforcel/liaoxuefeng/108705
 ```
 
 ## 阐述Python Web框架(framework)
+[自定义Web框架](./web_framework)
 ```
 ## Python Web开源框架
 flask、django、tornado、web.py
@@ -66,6 +67,14 @@ django/flask = wsgi + web framework
 
 注意：tornado既可以实现用wsgi也可以写原生的socket等.
 
+## jiaja2引擎
+# pip install jinja2
+
+>>> from jinja2 import Template
+>>> template = Template('Hello {{ name }}!')
+>>> template.render(name='John Doe') == u'Hello John Doe!'
+True
+
 ## MVC 与 MTV工作模型
 (1) MVC模型
 Models Views Controllers
@@ -78,6 +87,9 @@ Models Templates Views
 Models：        存放数据库操作.
 Templates:      存放html文件.
 Views:          存放处理函数.
+
+## Jinja2文档
+http://docs.jinkan.org/docs/jinja2/
 ```
 
 ## Python subprocess.Popen
