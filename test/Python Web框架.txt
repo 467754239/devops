@@ -1,0 +1,69 @@
+
+## Python开源Web框架
+flask
+Django
+tornado
+
+## 框架组成
+url
+view
+model
+===============================
+
+原始Web框架
+自定义Web框架
+jinja2
+    - pip install jinja2
+MTV 和 MVC
+
+===============================
+
+
+Python的Web框架分为两大类
+第一类 自已写socket并且自已处理逻辑.(tornado)
+第二类 自已处理逻辑，socket让wsgi来处理.(flask/django都是基于wsgi的上层封装)
+其实tornado以上两种都支持
+
+wsgi封装了socket实现了什么？
+1. 接收请求
+2. 预处理请求，并封装处理的结果.
+
+wsgi不属于框架
+
+Werkzeug是Flask使用底层WSGI库
+
+
+clientA -> wsgi -> web framework -> wsgi -> clientA
+
+tornado = socket + web framework
+django/flask = wsgi + web framework
+
+
+
+***自定义框架***
+
+WSGI：Web Server Gateway Interface
+
+
+## MTV 和 MVC
+
+wsgi + url匹配 + function处理 + jinja2渲染 + string(db + html)
+
+Controllers     // 函数
+html            // static template
+url.py          // url
+views           //
+model           //
+
+
+# MVC模型
+Models Views Controllers
+Models：        存放数据库操作.
+Views:          存放html文件.
+Controllers:    存放处理函数.
+
+# MTV模型
+Models Templates Views
+Models：        存放数据库操作.
+Templates:      存放html文件.
+Views:          存放处理函数.

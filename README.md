@@ -1,3 +1,15 @@
+## 知乎文章
+```
+## 如何优雅地使用 Stack Overflow？
+https://www.zhihu.com/question/20824615
+
+## 为什么 Flask 有那么多的好评?
+https://www.zhihu.com/question/28902969
+
+## 有哪些python+flask的搭建的博客或论坛开源推荐？
+https://www.zhihu.com/question/40746923
+```
+
 ## nohup
 ```
 nohup(n ohang up)
@@ -21,51 +33,78 @@ flask中的session默认是完全保留在客户端浏览器中的，
 SecureCookieSession
 ```
 
-### supervise
+## WSGI
 ```
-1. 介绍
-系统进程监控管理器
-功能是监控一个指定的服务，当该服务进程消亡，则重新启动该进程。
+WSGI是Web Server Gateway Interface的缩写
+Python内置了一个WSGI服务器，这个模块叫wsgiref，它是用纯Python编写的WSGI服务器的参考实现。
 
-2. 安装
-# wget http://cr.yp.to/daemontools/daemontools-0.76.tar.gz 
-# tar -zxf daemontools-0.76.tar.gz 
-# cd admin/daemontools-0.76 
-# package/install   //此处会有报错
-# vim src/conf-cc
-在第一行最后加上 -include /usr/include/errno.h
-
-# wget http://smarden.org/pape/djb/manpages/daemontools-0.76-man.tar.gz 
-# tar zxf daemontools-0.76-man.tar.gz 
-# cd daemontools-man 
-# gzip *.8 
-# cp *.8.gz /usr/share/man/man8
-
-3. 功能补充
-man svscan
-cat /etc/inittab
-会发现原来daemontools是使用init的方式来保护自己的：
-SV:123456:respawn:/command/svscanboot
-
-4. 示例
-# cd /opt/sengled/agent
-# vim main.py
-import time
-while True:
-    time.sleelp(1)
-
-# vim run
-source /etc/profile
-python main.py
-
+## 参考文章
+http://wsgi.readthedocs.io/en/latest/
+http://www.kancloud.cn/wizardforcel/liaoxuefeng/108705
 ```
 
-## 敏捷开发
+## 阐述Python Web框架(framework)
+```
+## Python Web开源框架
+flask、django、tornado、web.py
+
+## 框架的组成
+socket、url、view、model......
+
+## Python Web框架分为两类
+(1) 第一类
+wsgi + web framework
+这一类的框架代表有flask、django
+不负责处理底层socket通信以及HTTP请求解析等，只处理更高层次的逻辑处理.
+
+(2) 第二类
+web framework
+这一类的框架代表有tornado
+
+tornado = socket + web framework
+django/flask = wsgi + web framework
+
+注意：tornado既可以实现用wsgi也可以写原生的socket等.
+
+## MVC 与 MTV工作模型
+(1) MVC模型
+Models Views Controllers
+Models：        存放数据库操作.
+Views:          存放html文件.
+Controllers:    存放处理函数.
+
+(2) MTV模型
+Models Templates Views
+Models：        存放数据库操作.
+Templates:      存放html文件.
+Views:          存放处理函数.
 ```
 
+## Python subprocess.Popen
+```
+参考文章
+http://zhoutall.com/archives/469
+https://docs.python.org/2/library/subprocess.html
+http://denizeren.net/2014/07/14/flask-file-descriptor-inheritance-problem/
+
+## 程序结构描述
+主线程为Flask，默认监听在5000端口上，其它功能用子线程来执行；
+子线程中有调用subprocess模块启动指定的服务(比如nginx、java等);
+
+## 问题
+主线程退出，子线程占用主线程的5000端口.
+和下面这个链接遇到问题很类似
+http://denizeren.net/2014/07/14/flask-file-descriptor-inheritance-problem/
+
+>>> subprocess.Popen?
+If close_fds is true, all file descriptors except 0, 1 and 2 will be closed before the child process is executed. (Unix only). Or, on Windows, if close_fds is true then no handles will be inherited by the child process. Note that on Windows, you cannot set close_fds to true and also redirect the standard handles by setting stdin, stdout or stderr.
+译
+如果参数close_fds是True，所有的文件描述符除了0, 1 and 2都将要被关闭在子进程被执行之前，在(Unix only)；
+或者在Windows如果close_fds是True那么没有被处理的都将被子进程继承.
+注意：在Windows上你不能设置close_fds 为True并且不能重定向stdin, stdout or stderr.
 ```
 
-## 站立会
-```
 
-```
+
+## 参考文章
+[Stack Overflow 地址](http://stackoverflow.com/)
