@@ -44,7 +44,7 @@ http://www.kancloud.cn/wizardforcel/liaoxuefeng/108705
 ```
 
 ## 阐述Python Web框架(framework)
-[自定义Web框架](./web_framework)
+[自定义Web框架](https://github.com/467754239/devops/tree/master/web_framework)
 ```
 ## Python Web开源框架
 flask、django、tornado、web.py
