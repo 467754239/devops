@@ -6,8 +6,20 @@ https://www.zhihu.com/question/20824615
 ## 为什么 Flask 有那么多的好评?
 https://www.zhihu.com/question/28902969
 
+## 怎样才能彻底掌握flask？怎么个学习顺序比较合理？
+https://www.zhihu.com/question/20135205
+
 ## 有哪些python+flask的搭建的博客或论坛开源推荐？
 https://www.zhihu.com/question/40746923
+```
+
+## 源码分析
+```
+# flask
+https://github.com/pallets/flask
+
+# httpbin
+https://github.com/Runscope/httpbin
 ```
 
 ## nohup
@@ -39,8 +51,9 @@ WSGI是Web Server Gateway Interface的缩写
 Python内置了一个WSGI服务器，这个模块叫wsgiref，它是用纯Python编写的WSGI服务器的参考实现。
 
 ## 参考文章
-http://wsgi.readthedocs.io/en/latest/
 http://www.kancloud.cn/wizardforcel/liaoxuefeng/108705
+http://archimedeanco.com/wsgi-tutorial/
+http://wsgi.readthedocs.io/en/latest/
 ```
 
 ## 阐述Python Web框架(framework)
@@ -117,6 +130,17 @@ If close_fds is true, all file descriptors except 0, 1 and 2 will be closed befo
 ```
 
 
+## 学习Blog
+```
+# flask、django
+http://blog.igevin.info/archive/
+
+# Python
+http://www.kancloud.cn/wizardforcel/liaoxuefeng/108427
+
+# GIt
+https://github.com/flyhigher139/Git-Cheat-Sheet
+```
 
 ## 参考文章
 [Stack Overflow 地址](http://stackoverflow.com/)
