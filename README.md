@@ -27,12 +27,15 @@ https://github.com/Runscope/httpbin
 nohup(n ohang up)
 中文意思就是不挂起的意思
 
-$ man nohup  //查看对应的帮助说明.
-运行COMMAND，忽略挂起SIGHUP信号.
-标准输出和标准错误缺省会被重定向到 nohup.out 文件中
+当进程不是守护进程时，不能简单地在命令行后添加一个&，当终端关闭时，该进程也随之关闭。因为通常在终端起动的进程其父进程是终端进程,
+也就是大家常说的init进程，当终端关闭时，其所有子进程也随之关闭。
 
-终端关闭后会给此终端下的每一个进程发送SIGHUP信号，从而关闭其所有子进程;
-而使用nohup运行的进程则会忽略这个SIGHUP信号，因此终端关闭后进程也不会退出。
+## 语法
+$ nohup command > out.log 2&1 &
+nohup的作用终端关闭后会给此终端下的每一个进程发送SIGHUP信号，从而关闭其所有子进程;而使用nohup运行的进程则会忽略这个SIGHUP信号，
+因此终端关闭后进程也不会退出。
+
+使用2>&1将标准错误输出也重定向到标准输出中，因为预定义的STDIN，STDOUT，STDERR分别是0，1，2。
 ```
 
 ## flask session
@@ -129,18 +132,22 @@ If close_fds is true, all file descriptors except 0, 1 and 2 will be closed befo
 注意：在Windows上你不能设置close_fds 为True并且不能重定向stdin, stdout or stderr.
 ```
 
-
 ## 学习Blog
 ```
+# Stack Overflow
+http://stackoverflow.com/
+
 # flask、django
 http://blog.igevin.info/archive/
 
+<flask response>
+http://www.programcreek.com/python/example/51515/flask.Response
+
 # Python
 http://www.kancloud.cn/wizardforcel/liaoxuefeng/108427
+<python Example搜索 挺好的>
+http://www.programcreek.com/python/
 
 # GIt
 https://github.com/flyhigher139/Git-Cheat-Sheet
 ```
-
-## 参考文章
-[Stack Overflow 地址](http://stackoverflow.com/)
