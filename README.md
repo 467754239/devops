@@ -145,9 +145,10 @@ http://www.programcreek.com/python/example/51515/flask.Response
 
 # Python
 http://www.kancloud.cn/wizardforcel/liaoxuefeng/108427
+
 <python Example搜索 挺好的>
 http://www.programcreek.com/python/
 
-# GIt
+# Git
 https://github.com/flyhigher139/Git-Cheat-Sheet
 ```
