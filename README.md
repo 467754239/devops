@@ -1,30 +1,3 @@
-## 知乎文章
-```
-## 如何优雅地使用 Stack Overflow？
-https://www.zhihu.com/question/20824615
-
-## 为什么 Flask 有那么多的好评?
-https://www.zhihu.com/question/28902969
-
-## 怎样才能彻底掌握flask？怎么个学习顺序比较合理？
-https://www.zhihu.com/question/20135205
-
-## 有哪些python+flask的搭建的博客或论坛开源推荐？
-https://www.zhihu.com/question/40746923
-```
-
-## 源码分析
-```
-# httpbin
-https://github.com/Runscope/httpbin
-
-# flask
-https://github.com/pallets/flask
-
-# ansible
-https://github.com/ansible/ansible
-```
-
 ## nohup
 ```
 nohup(n ohang up)
@@ -111,7 +84,7 @@ Views:          存放处理函数.
 http://docs.jinkan.org/docs/jinja2/
 ```
 
-## Python subprocess.Popen
+## subprocess.Popen
 ```
 参考文章
 http://zhoutall.com/archives/469
@@ -133,6 +106,15 @@ If close_fds is true, all file descriptors except 0, 1 and 2 will be closed befo
 如果参数close_fds是True，所有的文件描述符除了0, 1 and 2都将要被关闭在子进程被执行之前，在(Unix only)；
 或者在Windows如果close_fds是True那么没有被处理的都将被子进程继承.
 注意：在Windows上你不能设置close_fds 为True并且不能重定向stdin, stdout or stderr.
+```
+
+## 文件描述符
+```
+文件描述符是操作系统为每个进程维护的一个结构体数组的索引（下标）。因此fd一定是非负整数。
+内核会为进程打开的每个文件分配一个结构体来存放文件的相关信息，这个结构体在结构体数组中的下标即为该文件的文件描述符。
+系统打开文件后创建的一种标签，描述了这个打开文件目录的一些状态.
+一个结构体，其中的数据项纪录了文件的路径，状态，当前写的位置.
+os.dup2(old_fd, new_fd)函数的作用是将下标为old_fd的结构体复制到new_fd对应的结构体，从而使两个结构体得内容相同。
 ```
 
 ## 学习Blog
@@ -157,4 +139,16 @@ https://github.com/flyhigher139/Git-Cheat-Sheet
 
 # sumline
 https://github.com/jikeytang/sublime-text
+```
+
+## 源码分析
+```
+# httpbin
+https://github.com/Runscope/httpbin
+
+# flask
+https://github.com/pallets/flask
+
+# ansible
+https://github.com/ansible/ansible
 ```
