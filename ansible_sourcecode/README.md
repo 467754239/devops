@@ -71,3 +71,8 @@ def stringc(text, color):
     else:
         return text
 ```
+
+> ssh.py 命令行执行模块
+> ansible/runner/connection_plugins/ssh.py
+
+[查看源码ssh.py](./ssh.py)
