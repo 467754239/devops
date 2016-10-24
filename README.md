@@ -117,6 +117,14 @@ If close_fds is true, all file descriptors except 0, 1 and 2 will be closed befo
 os.dup2(old_fd, new_fd)函数的作用是将下标为old_fd的结构体复制到new_fd对应的结构体，从而使两个结构体得内容相同。
 ```
 
+## ansible sourceCode
+[源代码](./ansible_sourcecode)
+
+## 异步I/O select
+```
+select
+```
+
 ## 学习Blog
 ```
 # Stack Overflow
@@ -145,10 +153,8 @@ https://github.com/jikeytang/sublime-text
 ```
 # httpbin
 https://github.com/Runscope/httpbin
-
 # flask
 https://github.com/pallets/flask
-
 # ansible
 https://github.com/ansible/ansible
 ```
