@@ -170,6 +170,20 @@ timeout 超时设置，可选.单位秒，表示多长时间监听一次.
 ansible中也是用了select监听事件的方式.
 ```
 
+## Ansible
+```
+https://github.com/ansible/ansible
+
+#core模块
+https://github.com/ansible/ansible-modules-core
+
+#extras模块
+https://github.com/ansible/ansible-modules-extras
+在extras模块中有一些插件可以学习参考
+比如nagios、zabbix监控的
+https://github.com/ansible/ansible-modules-extras/tree/devel/monitoring
+```
+
 ## 学习Blog
 ```
 # Stack Overflow
