@@ -184,6 +184,14 @@ https://github.com/ansible/ansible-modules-extras
 https://github.com/ansible/ansible-modules-extras/tree/devel/monitoring
 ```
 
+## raft
+> Raft一致性算法论文的中文翻译
+
+英文[论文地址](./pdf/raft.pdf)
+
+中文[翻译地址](https://github.com/maemual/raft-zh_cn/blob/master/raft-zh_cn.md)
+
+
 ## 学习Blog
 ```
 # Stack Overflow
