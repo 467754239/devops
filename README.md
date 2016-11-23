@@ -1,6 +1,6 @@
 # 大纲
 
-[![Build Status](https://github.com/467754239/devops)](https://github.com/467754239/devops)
+[![Build Status](https://travis-ci.org/justjavac/free-programming-books-zh_CN.svg?branch=master)](https://github.com/467754239/devops)
 
 * [Nohup](base/nohup.md)
 * [Flask session](./base/flask_session.md)
