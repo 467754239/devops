@@ -1,5 +1,7 @@
 # 大纲
 
+[![Build Status](https://travis-ci.org/justjavac/free-programming-books-zh_CN.svg?branch=master)](https://travis-ci.org/justjavac/free-programming-books-zh_CN)
+
 * [Nohup](base/nohup.md)
 * [Flask session](./base/flask_session.md)
 * [WSGI](./base/wsgi.md)
