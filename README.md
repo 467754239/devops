@@ -9,11 +9,14 @@
 * [subprocess](./base/suprocess.md)
 * [File descriptor](./base/file_descriptor.md)
 * [ansible source](./source/ansible)
-* [httpbin source](./source/ansible)
 * [signal](./base/signal.md)
+* [httpbin source](./source/ansible)
 * [simple httpserver](./core/simple_httpserver)
 * [asynchronous I/O](./core/select.md)
-* [paxos vs raft](./core/paxos_raft.md)
+* [Paxos vs Raft](./core/raft)
+* CI/CD
+* gitlab/gitolite
+* jenkins
 
 
 
