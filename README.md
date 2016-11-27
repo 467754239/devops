@@ -14,7 +14,7 @@
 * [simple httpserver](./core/simple_httpserver)
 * [asynchronous I/O](./core/select.md)
 * [Paxos vs Raft](./core/raft)
-* CI/CD(CI-CD.md)
+* [CI/CD](CI-CD.md)
 * gitlab/gitolite
 * jenkins
 
